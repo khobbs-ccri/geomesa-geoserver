@@ -9,9 +9,10 @@
 package org.geomesa.gs.security
 import org.geomesa.gs.security.DataStoreSecurityProviderImpl.{DA, FC, FR, FS}
 import com.typesafe.scalalogging.LazyLogging
-import org.geoserver.security.decorators.{DecoratingDataAccess, DecoratingDataStore, DecoratingSimpleFeatureSource}
+import org.geoserver.security.decorators.{DecoratingDataAccess, DecoratingSimpleFeatureSource}
 import org.geotools.data._
 import org.geotools.data.simple.{SimpleFeatureCollection, SimpleFeatureSource}
+import org.geotools.data.store.DecoratingDataStore
 import org.geotools.feature.FeatureCollection
 import org.geotools.feature.collection.FilteringSimpleFeatureCollection
 import org.locationtech.geomesa.accumulo.security.VisibilityFilterFunction
